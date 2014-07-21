@@ -1,0 +1,88 @@
+/* photos */
+
+.photos ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.photos .one_photo {
+	display: inline;
+}
+
+.photos .one_photo img {
+	margin: 3px;
+	width: 80px;
+}
+
+/* carousel */
+
+.carousel {
+	width: 840px;
+	overflow: hidden;
+	display:inline-block;
+	position: relative;
+	height:	460px;
+	margin: 0 auto;
+}
+
+.carousel ul {
+	width: 2520px;
+	padding: 0;
+	margin: 0;
+}
+
+.carousel ul li {
+	width:840px;
+	text-align:	center;
+	height:	460px;
+	list-style:	none;
+	display: inline-block;
+}
+
+.cl_title {
+	position: absolute;
+	display: block;
+	bottom: 2em;
+	left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+	background: #FFFFFF;
+	color: #98A0A8;
+	line-height: 2.2em;
+	font-weight: normal;
+	text-shadow: none;
+	opacity: 0.8;
+}
+
+.cl_next, .cl_prev {
+	position: absolute;
+	display: none;
+	top: 50%;
+	margin-top: -2.3em;
+	z-index: 60;
+	width: 2.6em;
+	height: 4.6em;
+	background-image: url(img/arrows.png);
+	background-size: 200%;
+}
+
+.cl_next {
+	background-position: 100% 0;
+	right: 3px;
+}
+
+.cl_prev {
+	background-position: 0 0;
+	left: 3px;
+}
+
+.carousel .cl_next, .carousel .cl_prev {
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+.carousel:hover .cl_next, .carousel:hover .cl_prev {
+	display: block;
+}
